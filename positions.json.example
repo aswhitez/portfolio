@@ -1,0 +1,14 @@
+[
+  {
+    "ticker": "MC.PA",
+    "quantite": "10",
+    "prix_achat": "700.0",
+    "devise": "EUR"
+  },
+  {
+    "ticker": "BTC",
+    "quantite": "0.1",
+    "prix_achat": "50000.0",
+    "devise": "EUR"
+  }
+]

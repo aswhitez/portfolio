@@ -1,5 +1,7 @@
 # Portfolio App
-
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Package Manager](https://img.shields.io/badge/uv-enabled-purple)
 Application Python locale de suivi de portefeuille d'investissement avec calculs déterministes et synthèse rédigée par le LLM local `phi4-mini` via **Ollama**.
 
 ## Architecture et Sécurité

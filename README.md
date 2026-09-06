@@ -22,11 +22,13 @@ Installez l'environnement et les dépendances :
 
 ```bash
 uv sync
+```
+
 ## Configuration
 
-Créez un fichier positions.json à la racine du projet avec vos actifs libellés en EUR :
+Créez un fichier `positions.json` à la racine du projet avec vos actifs libellés en EUR :
 
-JSON
+```json
 [
   {
     "ticker": "APC.DE",
@@ -41,35 +43,38 @@ JSON
     "devise": "EUR"
   }
 ]
+```
 
+### Variables d'environnement optionnelles
 
-##Variables d'environnement optionnelles
-
-DEFAULT_CURRENCY : Devise de référence globale (défaut : EUR).
-
-REQUEST_TIMEOUT : Délai d'attente réseau en secondes (défaut : 30, recommandé 90 sur CPU).
-
-OLLAMA_URL : Point d'accès de l'API Ollama (défaut : http://localhost:11434/api/chat).
-
-OLLAMA_MODEL : Nom du modèle local (défaut : phi4-mini).
+- `DEFAULT_CURRENCY` : Devise de référence globale (défaut : `EUR`).
+- `REQUEST_TIMEOUT` : Délai d'attente réseau en secondes (défaut : `30`, recommandé `90` sur CPU).
+- `OLLAMA_URL` : Point d'accès de l'API Ollama (défaut : `http://localhost:11434/api/chat`).
+- `OLLAMA_MODEL` : Nom du modèle local (défaut : `phi4-mini`).
 
 ## Exécution
 
 Lancer l'interface en ligne de commande :
 
-Bash
+```bash
 uv run python -m portfolio.cli
+```
 
 ## Validation et Tests
+
 Lancer la suite complète de tests unitaires :
 
-Bash
+```bash
 uv run pytest
+```
+
 Vérifier la sécurité des dépendances et la compilation du code :
 
-Bash
+```bash
 uv audit
 uv run python -m compileall portfolio
+```
 
 ## Avertissement Légal
+
 Cette application est fournie à titre purement informatif et ne constitue pas un conseil en investissement financier.

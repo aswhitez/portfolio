@@ -1,0 +1,18 @@
+[project]
+name = "portfolio"
+version = "1.0.0"
+description = "Suivi de portefeuille financier local avec analyse LLM sécurisée"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "yfinance>=0.2.38",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.uv]
+exclude-newer = "7 days"

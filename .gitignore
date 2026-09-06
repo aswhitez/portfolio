@@ -1,0 +1,31 @@
+# Environnement virtuel local
+.venv/
+venv/
+ENV/
+
+# Données personnelles et de configuration sensibles
+positions.json
+.env
+.env.*
+!.env.example
+
+# Cache Python et bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caches d'outils et de tests
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Fichiers système et éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
